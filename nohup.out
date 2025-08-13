@@ -1,0 +1,80 @@
+WARNING -  Config value 'plugins': Plugin 'material/tags' option 'tags_file': This setting is not required anymore
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+WARNING -  Doc file 'index.md' contains a link 'foundations/habit-formation.md', but the target is not found among documentation files.
+WARNING -  Doc file 'index.md' contains a link 'plan/phase-01-orientation-days-01-07.md', but the target is not found among documentation files.
+WARNING -  Doc file 'index.md' contains a link 'plan/phase-03-deepening-days-22-45.md', but the target is not found among documentation files.
+WARNING -  Doc file 'index.md' contains a link 'plan/phase-04-integration-days-46-60.md', but the target is not found among documentation files.
+WARNING -  Doc file 'index.md' contains a link 'plan/phase-05-expansion-days-61-90.md', but the target is not found among documentation files.
+WARNING -  Doc file 'enrichment/cultural-respect.md' contains a link 'historical-context.md', but the target 'enrichment/historical-context.md' is not found among documentation files.
+WARNING -  Doc file 'enrichment/cultural-respect.md' contains a link 'recommended-resources.md', but the target 'enrichment/recommended-resources.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day09.md', but the target 'days/day09.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day10.md', but the target 'days/day10.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day11.md', but the target 'days/day11.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day12.md', but the target 'days/day12.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day13.md', but the target 'days/day13.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day14.md', but the target 'days/day14.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day16.md', but the target 'days/day16.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day17.md', but the target 'days/day17.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day18.md', but the target 'days/day18.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day19.md', but the target 'days/day19.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day20.md', but the target 'days/day20.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phase-02-stabilization-days-08-21.md' contains a link '../days/day21.md', but the target 'days/day21.md' is not found among documentation files.
+WARNING -  Doc file 'plan/phases-overview.md' contains a link 'phase-01-orientation-days-01-07.md', but the target 'plan/phase-01-orientation-days-01-07.md' is not found among documentation files.
+WARNING -  Doc file 'reflection/weekly-reviews.md' contains a link 'journaling-prompts.md', but the target 'reflection/journaling-prompts.md' is not found among documentation files.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/bin/mkdocs", line 8, in <module>
+    sys.exit(cli())
+             ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/mkdocs/__main__.py", line 272, in serve_command
+    serve.serve(**kwargs)
+  File "/usr/local/lib/python3.11/site-packages/mkdocs/commands/serve.py", line 85, in serve
+    builder(config)
+  File "/usr/local/lib/python3.11/site-packages/mkdocs/commands/serve.py", line 67, in builder
+    build(config, serve_url=None if is_clean else serve_url, dirty=is_dirty)
+  File "/usr/local/lib/python3.11/site-packages/mkdocs/commands/build.py", line 328, in build
+    _build_theme_template(template, env, files, config, nav)
+  File "/usr/local/lib/python3.11/site-packages/mkdocs/commands/build.py", line 103, in _build_theme_template
+    output = _build_template(template_name, template, files, config, nav)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/mkdocs/commands/build.py", line 83, in _build_template
+    output = template.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/usr/local/lib/python3.11/site-packages/material/templates/404.html", line 4, in top-level template code
+    {% extends "main.html" %}
+  File "/usr/local/lib/python3.11/site-packages/material/templates/main.html", line 4, in top-level template code
+    {% extends "base.html" %}
+  File "/usr/local/lib/python3.11/site-packages/material/templates/base.html", line 140, in top-level template code
+    {% block header %}
+^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/material/templates/base.html", line 141, in block 'header'
+    {% include "partials/header.html" %}
+^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/material/templates/partials/header.html", line 13, in top-level template code
+    {% include "partials/logo.html" %}
+^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/material/templates/partials/logo.html", line 8, in top-level template code
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+jinja2.exceptions.TemplateNotFound: '.icons/material/flower-lotus.svg' not found in search paths: '/usr/local/lib/python3.11/site-packages/material/templates', '/usr/local/lib/python3.11/site-packages/mkdocs/templates'
