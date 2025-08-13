@@ -1,0 +1,10 @@
+authors:
+    zen_practitioner:
+        name: Zen Practitioner
+        description: A fellow traveler on the path
+        avatar: https://github.com/identicons/zen-practitioner.png
+
+    community:
+        name: Community
+        description: Shared wisdom from our practice community
+        avatar: https://github.com/identicons/zen-community.png

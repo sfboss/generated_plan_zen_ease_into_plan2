@@ -48,9 +48,58 @@ theme:
     favicon: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/assets/images/favicon.png
 
 plugins:
-    - search
-    - tags
-    - glightbox
+    - search:
+          separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+    - tags:
+          tags_file: tag-index/index.md
+    - glightbox:
+          touchNavigation: true
+          loop: false
+          effect: zoom
+          slide_effect: slide
+          width: 100%
+          height: auto
+          zoomable: true
+          draggable: true
+    - blog:
+          blog_dir: reflection/blog
+          blog_toc: true
+          post_dir: '{blog}/posts'
+          post_date_format: full
+          post_url_date_format: yyyy/MM/dd
+          post_url_format: '{date}/{slug}'
+          post_excerpt: optional
+          post_excerpt_max_authors: 2
+          post_excerpt_max_categories: 5
+          post_readtime: true
+          post_readtime_words_per_minute: 265
+          pagination: true
+          pagination_per_page: 10
+          pagination_url_format: 'page/{page}'
+          pagination_format: '~2~'
+          pagination_if_single_page: false
+          pagination_keep_content: false
+          authors: true
+          authors_file: '{blog}/.authors.yml'
+          categories: true
+          categories_name: 'Categories'
+          categories_url_format: 'category/{slug}'
+          categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+              kwds:
+                  case: lower
+          categories_slugify_separator: '-'
+          categories_allowed:
+              - weekly-review
+              - insights
+              - challenges
+              - milestones
+              - practice-tips
+          archive: true
+          archive_name: 'Archive'
+          archive_date_format: '%Y'
+          archive_url_date_format: yyyy
+          archive_url_format: '{date}'
+          archive_toc: true
 
 markdown_extensions:
     - admonition
@@ -101,6 +150,7 @@ nav:
           - Core Practices: foundations/core-practices.md
           - FAQ: foundations/frequently-asked-questions.md
     - Practice Plan:
+          - Phases Overview: plan/phases-overview.md
           - Phase 2 - Stabilization (Days 8-21): plan/phase-02-stabilization-days-08-21.md
     - Daily Practices:
           - Week 1 (Days 1-7):
@@ -118,7 +168,13 @@ nav:
                 - Day 60: days/day60.md
                 - Day 75: days/day75.md
                 - Day 90: days/day90.md
+    - Progress Tracking:
+          - Calendar View: progress/calendar-view.md
+          - Progress Dashboard: progress/dashboard.md
+          - Milestone Tracker: progress/milestones.md
     - Reflection:
+          - Blog: reflection/blog/index.md
           - Weekly Reviews: reflection/weekly-reviews.md
     - Enrichment:
           - Cultural Respect: enrichment/cultural-respect.md
+    - Tags: tag-index/index.md
