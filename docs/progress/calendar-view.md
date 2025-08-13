@@ -7,17 +7,45 @@ tags:
     - skill:planning
 ---
 
-# :calendar: Practice Calendar View
+# 🌅 Practice Calendar View
+
+<div class="zen-banner">
+    <div class="sunset-gradient">
+        <h1>🪷 90-Day Zen Journey</h1>
+        <p>Track your path to inner peace</p>
+    </div>
+</div>
 
 <div class="calendar-container">
-    <div class="calendar-header">
-        <h2>90-Day Zen Practice Journey</h2>
-        <p>Track your daily practice progress</p>
-    </div>
+    
+    ??? info "🧘‍♀️ How to Use This Calendar"
+        
+        - **🟢 Green squares** = Foundation Phase (Days 1-7)
+        - **🔵 Blue squares** = Stabilization Phase (Days 8-21)  
+        - **🟠 Orange squares** = Deepening Phase (Days 22-45)
+        - **🟣 Purple squares** = Integration Phase (Days 46-60)
+        - **🌸 Pink squares** = Expansion Phase (Days 61-90)
+        - **📱 Click any day** to go to that practice
+        - **✅ Mark completed days** to track progress
+    
+    ??? tip "📝 Calendar Navigation Tips"
+        
+        **Visual Legend:**
+        
+        - 🌱 = Available practice with content
+        - ⬜ = Upcoming practice day
+        - ✅ = Completed practice
+        - 🎯 = Current day
+        
+        **Quick Actions:**
+        
+        - Use the **phase colors** to understand your journey stage
+        - **Hover over days** to see practice focus
+        - **Click linked days** to jump to detailed instructions
 
     <!-- Month 1: Days 1-30 -->
     <div class="calendar-month">
-        <h3>:seedling: Phase 1 & 2: Foundation & Stabilization</h3>
+        <h3>🌱 Phase 1 & 2: Foundation & Stabilization</h3>
         <div class="calendar-grid">
             <div class="calendar-day-header">Sun</div>
             <div class="calendar-day-header">Mon</div>
@@ -111,7 +139,7 @@ tags:
 
     <!-- Month 2: Days 31-60 -->
     <div class="calendar-month">
-        <h3>:lotus_position: Phase 3 & 4: Deepening & Integration</h3>
+        <h3>🪷 Phase 3 & 4: Deepening & Integration</h3>
         <div class="calendar-grid">
             <div class="calendar-day-header">Sun</div>
             <div class="calendar-day-header">Mon</div>
@@ -139,7 +167,7 @@ tags:
 
     <!-- Month 3: Days 61-90 -->
     <div class="calendar-month">
-        <h3>:star: Phase 5: Expansion & Mastery</h3>
+        <h3>🌅 Phase 5: Expansion & Mastery</h3>
         <div class="calendar-grid">
             <div class="calendar-day-header">Sun</div>
             <div class="calendar-day-header">Mon</div>
@@ -167,9 +195,9 @@ tags:
 
 </div>
 
-## :chart_with_upwards_trend: Progress Tracking
+## 📊 Progress Tracking
 
-=== "Overall Progress"
+??? abstract "🎯 Overall Progress"
 
     <div class="progress-overview">
         <div class="progress-stat">
@@ -182,42 +210,38 @@ tags:
 
         <div class="progress-stat">
             <h4>Current Phase</h4>
-            <div class="phase-indicator phase-1">Phase 1: Foundation</div>
+            <div class="phase-indicator phase-1">🌱 Phase 1: Foundation</div>
         </div>
 
         <div class="progress-stat">
             <h4>Practice Streak</h4>
-            <span class="streak-counter">0 days</span>
+            <span class="streak-counter">🔥 0 days</span>
         </div>
     </div>
 
-=== "Phase Breakdown"
+??? example "📈 Phase Breakdown"
 
     | Phase | Days | Focus | Completion |
     |-------|------|-------|------------|
-    | 1: Foundation | 1-7 | Basic posture & breath | ⬜⬜⬜⬜⬜⬜⬜ |
-    | 2: Stabilization | 8-21 | Consistent practice | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-    | 3: Deepening | 22-45 | Advanced techniques | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-    | 4: Integration | 46-60 | Life application | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-    | 5: Expansion | 61-90 | Mastery & wisdom | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
+    | 1: Foundation 🌱 | 1-7 | Basic posture & breath | ⬜⬜⬜⬜⬜⬜⬜ |
+    | 2: Stabilization ⚖️ | 8-21 | Consistent practice | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
+    | 3: Deepening 🌊 | 22-45 | Advanced techniques | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
+    | 4: Integration 🔗 | 46-60 | Life application | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
+    | 5: Expansion 🌅 | 61-90 | Mastery & wisdom | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
 
-=== "Weekly Goals"
+??? tip "🎯 This Week's Focus"
 
-    !!! tip "This Week's Focus"
+    Start with the foundation! Your first week is about:
 
-        Start with the foundation! Your first week is about:
+    - **Day 1-3**: Basic posture and breathing 🧘‍♀️
+    - **Day 4-5**: Developing patience and mindfulness 🌸
+    - **Day 6-7**: Building consistency and integration 🌿
 
-        - **Day 1-3**: Basic posture and breathing
-        - **Day 4-5**: Developing patience and mindfulness
-        - **Day 6-7**: Building consistency and integration
+    Remember: Progress, not perfection! 🌸
 
-        Remember: Progress, not perfection! :cherry_blossom:
+## 📝 Practice Log
 
-## :memo: Practice Log
-
-Use this space to track your daily practice:
-
-!!! note "Quick Log Template"
+??? note "📋 Quick Log Template"
 
     **Today's Practice:**
 
@@ -231,10 +255,10 @@ Use this space to track your daily practice:
 
 ---
 
-!!! info "Navigation Tips"
+!!! info "🧭 Navigation Tips"
 
-    - **Green squares** = Available practice days with content
-    - **Gray squares** = Upcoming practice days
-    - **Click any available day** to go to that day's practice
-    - **Track your progress** by checking off completed days
-    - **Use the phase colors** to understand your journey stage
+    - **🟢 Green squares** = Available practice days with content
+    - **⬜ Gray squares** = Upcoming practice days
+    - **🔗 Click any available day** to go to that day's practice
+    - **✅ Track your progress** by checking off completed days
+    - **🎨 Use the phase colors** to understand your journey stage

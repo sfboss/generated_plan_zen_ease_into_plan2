@@ -7,96 +7,105 @@ tags:
     - skill:progress
 ---
 
-# 📊 Practice Dashboard
+# 🌅 Practice Dashboard
+
+<div class="zen-banner">
+    <div class="sunset-gradient">
+        <h1>🧘‍♀️ Your Zen Journey</h1>
+        <p>Inner peace, one breath at a time</p>
+    </div>
+</div>
 
 <div class="dashboard-container">
     
-    ## 🎯 Current Status
-    
-    <div class="status-grid">
-        <div class="status-card current-day">
-            <h3>:calendar: Today</h3>
-            <div class="day-number">Day 1</div>
-            <div class="phase-label">Phase 1: Foundation</div>
-            <a href="../days/day01/" class="practice-button">Start Today's Practice</a>
-        </div>
+    ??? info "🎯 Current Status"
         
-        <div class="status-card streak">
-            <h3>:fire: Practice Streak</h3>
-            <div class="streak-number">0</div>
-            <div class="streak-label">consecutive days</div>
-        </div>
-        
-        <div class="status-card completion">
-            <h3>:chart_with_upwards_trend: Progress</h3>
-            <div class="completion-circle">
-                <svg class="progress-ring" width="80" height="80">
-                    <circle cx="40" cy="40" r="32" stroke="#e0e0e0" stroke-width="6" fill="transparent"/>
-                    <circle cx="40" cy="40" r="32" stroke="var(--md-accent-fg-color)" stroke-width="6" 
-                            fill="transparent" stroke-dasharray="201" stroke-dashoffset="201"/>
-                </svg>
-                <div class="progress-text">0%</div>
+        <div class="status-grid">
+            <div class="status-card current-day">
+                <h3>📅 Today</h3>
+                <div class="day-number">Day 1</div>
+                <div class="phase-label">🌱 Phase 1: Foundation</div>
+                <a href="../days/day01/" class="practice-button">Start Today's Practice</a>
+            </div>
+            
+            <div class="status-card streak">
+                <h3>🔥 Practice Streak</h3>
+                <div class="streak-number">0</div>
+                <div class="streak-label">consecutive days</div>
+            </div>
+            
+            <div class="status-card completion">
+                <h3>📈 Progress</h3>
+                <div class="completion-circle">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle cx="40" cy="40" r="32" stroke="#e0e0e0" stroke-width="6" fill="transparent"/>
+                        <circle cx="40" cy="40" r="32" stroke="var(--md-accent-fg-color)" stroke-width="6" 
+                                fill="transparent" stroke-dasharray="201" stroke-dashoffset="201"/>
+                    </svg>
+                    <div class="progress-text">0%</div>
+                </div>
+            </div>
+            
+            <div class="status-card next-milestone">
+                <h3>⭐ Next Milestone</h3>
+                <div class="milestone-name">Week 1 Complete</div>
+                <div class="milestone-days">in 7 days</div>
             </div>
         </div>
-        
-        <div class="status-card next-milestone">
-            <h3>:star: Next Milestone</h3>
-            <div class="milestone-name">Week 1 Complete</div>
-            <div class="milestone-days">in 7 days</div>
-        </div>
-    </div>
 
-    ## 📈 Weekly Overview
+    ??? example "📈 Weekly Overview"
 
-    <div class="weekly-progress">
-        <h3>This Week (Days 1-7): Foundation Phase</h3>
-        <div class="week-grid">
-            <div class="day-box future" data-day="1">
-                <div class="day-label">Mon</div>
-                <div class="day-number">1</div>
-                <div class="day-status">🔲</div>
-                <div class="practice-focus">Foundation</div>
-            </div>
-            <div class="day-box future" data-day="2">
-                <div class="day-label">Tue</div>
-                <div class="day-number">2</div>
-                <div class="day-status">🔲</div>
-                <div class="practice-focus">Posture</div>
-            </div>
-            <div class="day-box future" data-day="3">
-                <div class="day-label">Wed</div>
-                <div class="day-number">3</div>
-                <div class="day-status">🔲</div>
-                <div class="practice-focus">Breath</div>
-            </div>
-            <div class="day-box future" data-day="4">
-                <div class="day-label">Thu</div>
-                <div class="day-number">4</div>
-                <div class="day-status">🔲</div>
-                <div class="practice-focus">Mindfulness</div>
-            </div>
-            <div class="day-box future" data-day="5">
-                <div class="day-label">Fri</div>
-                <div class="day-number">5</div>
-                <div class="day-status">🔲</div>
-                <div class="practice-focus">Patience</div>
-            </div>
-            <div class="day-box future" data-day="6">
-                <div class="day-label">Sat</div>
-                <div class="day-number">6</div>
-                <div class="day-status">🔲</div>
-                <div class="practice-focus">Consistency</div>
-            </div>
-            <div class="day-box future" data-day="7">
-                <div class="day-label">Sun</div>
-                <div class="day-number">7</div>
-                <div class="day-status">🔲</div>
-                <div class="practice-focus">Integration</div>
+    ??? example "📈 Weekly Overview"
+
+        <div class="weekly-progress">
+            <h3>This Week (Days 1-7): Foundation Phase 🌱</h3>
+            <div class="week-grid">
+                <div class="day-box future" data-day="1">
+                    <div class="day-label">Mon</div>
+                    <div class="day-number">1</div>
+                    <div class="day-status">🔲</div>
+                    <div class="practice-focus">Foundation</div>
+                </div>
+                <div class="day-box future" data-day="2">
+                    <div class="day-label">Tue</div>
+                    <div class="day-number">2</div>
+                    <div class="day-status">🔲</div>
+                    <div class="practice-focus">Posture</div>
+                </div>
+                <div class="day-box future" data-day="3">
+                    <div class="day-label">Wed</div>
+                    <div class="day-number">3</div>
+                    <div class="day-status">🔲</div>
+                    <div class="practice-focus">Breath</div>
+                </div>
+                <div class="day-box future" data-day="4">
+                    <div class="day-label">Thu</div>
+                    <div class="day-number">4</div>
+                    <div class="day-status">🔲</div>
+                    <div class="practice-focus">Mindfulness</div>
+                </div>
+                <div class="day-box future" data-day="5">
+                    <div class="day-label">Fri</div>
+                    <div class="day-number">5</div>
+                    <div class="day-status">🔲</div>
+                    <div class="practice-focus">Patience</div>
+                </div>
+                <div class="day-box future" data-day="6">
+                    <div class="day-label">Sat</div>
+                    <div class="day-number">6</div>
+                    <div class="day-status">🔲</div>
+                    <div class="practice-focus">Consistency</div>
+                </div>
+                <div class="day-box future" data-day="7">
+                    <div class="day-label">Sun</div>
+                    <div class="day-number">7</div>
+                    <div class="day-status">🔲</div>
+                    <div class="practice-focus">Integration</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    ## 🏆 Achievement Badges
+    ??? success "🏆 Achievement Badges"
 
     <div class="badges-grid">
         <div class="badge locked">
