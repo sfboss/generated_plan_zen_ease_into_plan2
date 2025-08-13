@@ -1,0 +1,121 @@
+site_name: 'Zen Practice Onboarding Plan'
+site_description: 'A comprehensive 90-day guided journey into Zen meditation practice, designed with cultural respect and progressive skill building.'
+site_url: 'https://sfboss.github.io/generated_plan_zen_ease_into_plan2/'
+repo_url: 'https://github.com/sfboss/generated_plan_zen_ease_into_plan2'
+repo_name: 'sfboss/generated_plan_zen_ease_into_plan2'
+edit_uri: 'edit/main/zen_plan/docs/'
+copyright: 'Copyright &copy; 2025 Zen Practice Onboarding Plan'
+
+theme:
+    name: material
+    features:
+        - navigation.sections
+        - navigation.tabs
+        - navigation.top
+        - navigation.tracking
+        - navigation.instant
+        - navigation.instant.prefetch
+        - navigation.indexes
+        - content.code.copy
+        - content.action.edit
+        - content.tabs.link
+        - search.highlight
+        - search.suggest
+        - search.share
+        - toc.follow
+        - toc.integrate
+    palette:
+        - scheme: default
+          primary: deep purple
+          accent: teal
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+        - scheme: slate
+          primary: deep purple
+          accent: teal
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+    icon:
+        logo: material/meditation
+        repo: fontawesome/brands/github
+        edit: material/pencil
+        view: material/eye
+    font:
+        text: 'Inter'
+        code: 'JetBrains Mono'
+    favicon: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/assets/images/favicon.png
+
+plugins:
+    - search
+    - tags
+    - glightbox
+
+markdown_extensions:
+    - admonition
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.mark
+    - pymdownx.inlinehilite
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.tilde
+    - pymdownx.smartsymbols
+    - pymdownx.keys
+    - def_list
+    - attr_list
+    - footnotes
+
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/sfboss/generated_plan_zen_ease_into_plan2
+          name: Source Repository
+    tags:
+        enabled: true
+
+extra_css:
+    - stylesheets/extra.css
+
+nav:
+    - Home: index.md
+    - Getting Started:
+          - Welcome: getting-started/welcome.md
+          - Safety & Wellbeing: getting-started/safety-wellbeing.md
+          - How to Use This Plan: getting-started/how-to-use-this-plan.md
+          - Glossary: getting-started/glossary.md
+          - Posture & Breath: getting-started/posture-and-breath.md
+          - Etiquette: getting-started/etiquette.md
+          - Schools of Zen: getting-started/schools-of-zen.md
+    - Foundations:
+          - Core Practices: foundations/core-practices.md
+          - FAQ: foundations/frequently-asked-questions.md
+    - Practice Plan:
+          - Phase 2 - Stabilization (Days 8-21): plan/phase-02-stabilization-days-08-21.md
+    - Daily Practices:
+          - Day 1: days/day01.md
+          - Day 2: days/day02.md
+          - Day 3: days/day03.md
+          - Day 7: days/day07.md
+          - Day 8: days/day08.md
+          - Day 15: days/day15.md
+          - Day 22: days/day22.md
+          - Day 30: days/day30.md
+          - Day 45: days/day45.md
+          - Day 60: days/day60.md
+          - Day 75: days/day75.md
+          - Day 90: days/day90.md
+    - Reflection:
+          - Weekly Reviews: reflection/weekly-reviews.md
+    - Enrichment:
+          - Cultural Respect: enrichment/cultural-respect.md
