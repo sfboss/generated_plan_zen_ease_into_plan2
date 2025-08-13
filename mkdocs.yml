@@ -3,7 +3,7 @@ site_description: 'A comprehensive 90-day guided journey into Zen meditation pra
 site_url: 'https://sfboss.github.io/generated_plan_zen_ease_into_plan2/'
 repo_url: 'https://github.com/sfboss/generated_plan_zen_ease_into_plan2'
 repo_name: 'sfboss/generated_plan_zen_ease_into_plan2'
-edit_uri: 'edit/main/zen_plan/docs/'
+edit_uri: 'edit/main/docs/'
 copyright: 'Copyright &copy; 2025 Zen Practice Onboarding Plan'
 
 theme:
@@ -93,28 +93,31 @@ nav:
           - Welcome: getting-started/welcome.md
           - Safety & Wellbeing: getting-started/safety-wellbeing.md
           - How to Use This Plan: getting-started/how-to-use-this-plan.md
-          - Glossary: getting-started/glossary.md
           - Posture & Breath: getting-started/posture-and-breath.md
           - Etiquette: getting-started/etiquette.md
           - Schools of Zen: getting-started/schools-of-zen.md
+          - Glossary: getting-started/glossary.md
     - Foundations:
           - Core Practices: foundations/core-practices.md
           - FAQ: foundations/frequently-asked-questions.md
     - Practice Plan:
           - Phase 2 - Stabilization (Days 8-21): plan/phase-02-stabilization-days-08-21.md
     - Daily Practices:
-          - Day 1: days/day01.md
-          - Day 2: days/day02.md
-          - Day 3: days/day03.md
-          - Day 7: days/day07.md
-          - Day 8: days/day08.md
-          - Day 15: days/day15.md
-          - Day 22: days/day22.md
-          - Day 30: days/day30.md
-          - Day 45: days/day45.md
-          - Day 60: days/day60.md
-          - Day 75: days/day75.md
-          - Day 90: days/day90.md
+          - Week 1 (Days 1-7):
+                - Day 1: days/day01.md
+                - Day 2: days/day02.md
+                - Day 3: days/day03.md
+                - Day 7: days/day07.md
+          - Week 2-3 (Days 8-21):
+                - Day 8: days/day08.md
+                - Day 15: days/day15.md
+          - Week 4+ (Days 22-90):
+                - Day 22: days/day22.md
+                - Day 30: days/day30.md
+                - Day 45: days/day45.md
+                - Day 60: days/day60.md
+                - Day 75: days/day75.md
+                - Day 90: days/day90.md
     - Reflection:
           - Weekly Reviews: reflection/weekly-reviews.md
     - Enrichment:
