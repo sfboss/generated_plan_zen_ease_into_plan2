@@ -11,7 +11,7 @@ theme:
     features:
         - navigation.sections
         - navigation.tabs
-        - navigation.top
+        - navigation.top````
         - navigation.tracking
         - navigation.instant
         - navigation.instant.prefetch
@@ -64,57 +64,27 @@ plugins:
     - search:
           separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
     - tags
-    - glightbox:
-          touchNavigation: true
-          loop: false
-          effect: zoom
-          slide_effect: slide
-          width: 100%
-          height: auto
-          zoomable: true
-          draggable: true
-    - macros:
-          module_name: docs/macros
-    - awesome-pages
-    - git-revision-date-localized:
-          type: timeago
-          timezone: America/Los_Angeles
-    - minify:
-          minify_html: true
-          minify_js: true
-          minify_css: true
 
 markdown_extensions:
     - admonition
-    - pymdownx.superfences:
-          custom_fences:
-              - name: mermaid
-                class: mermaid
-                format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.superfences
     - pymdownx.tabbed:
           alternate_style: true
     - pymdownx.details
-    - pymdownx.emoji:
-          emoji_index: !!python/name:materialx.emoji.twemoji
-          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.emoji
     - pymdownx.tasklist:
           custom_checkbox: true
           clickable_checkbox: true
-    - pymdownx.arithmatex:
-          generic: true
     - pymdownx.mark
     - pymdownx.inlinehilite
     - pymdownx.highlight:
           anchor_linenums: true
-          line_spans: __span
-          pygments_lang_class: true
     - pymdownx.tilde
     - pymdownx.smartsymbols
     - pymdownx.keys
     - pymdownx.critic
     - pymdownx.caret
     - pymdownx.snippets
-    - pymdownx.progressbar
     - def_list
     - attr_list
     - footnotes
@@ -144,9 +114,6 @@ extra_javascript:
     - javascripts/sound-effects.js
     - javascripts/ambient-sounds.js
     - javascripts/achievement-system.js
-    - https://unpkg.com/mermaid/dist/mermaid.min.js
-    - https://polyfill.io/v3/polyfill.min.js?features=es6
-    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
     - Home: index.md
