@@ -1,0 +1,14 @@
+# MkDocs and core dependencies
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
+
+# Plugins used in mkdocs.yml
+mkdocs-glightbox>=0.3.4
+mkdocs-material[blog]>=9.4.0
+
+# Additional dependencies for Material theme features
+pillow>=9.0.0
+cairosvg>=2.6.0
+
+# For better build performance
+colorama>=0.4.6

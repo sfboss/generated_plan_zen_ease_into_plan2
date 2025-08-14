@@ -38,7 +38,7 @@ theme:
               icon: material/weather-sunset-up
               name: Switch to light mode
     icon:
-        logo: material/flower-lotus
+        logo: material/meditation
         repo: fontawesome/brands/github
         edit: material/pencil
         view: material/eye
@@ -63,8 +63,7 @@ theme:
 plugins:
     - search:
           separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-    - tags:
-          tags_file: tag-index/index.md
+    - tags
     - glightbox:
           touchNavigation: true
           loop: false
@@ -74,45 +73,6 @@ plugins:
           height: auto
           zoomable: true
           draggable: true
-    - blog:
-          blog_dir: reflection/blog
-          blog_toc: true
-          post_dir: '{blog}/posts'
-          post_date_format: full
-          post_url_date_format: yyyy/MM/dd
-          post_url_format: '{date}/{slug}'
-          post_excerpt: optional
-          post_excerpt_max_authors: 2
-          post_excerpt_max_categories: 5
-          post_readtime: true
-          post_readtime_words_per_minute: 265
-          pagination: true
-          pagination_per_page: 10
-          pagination_url_format: 'page/{page}'
-          pagination_format: '~2~'
-          pagination_if_single_page: false
-          pagination_keep_content: false
-          authors: true
-          authors_file: '{blog}/.authors.yml'
-          categories: true
-          categories_name: 'Categories'
-          categories_url_format: 'category/{slug}'
-          categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-              kwds:
-                  case: lower
-          categories_slugify_separator: '-'
-          categories_allowed:
-              - weekly-review
-              - insights
-              - challenges
-              - milestones
-              - practice-tips
-          archive: true
-          archive_name: 'Archive'
-          archive_date_format: '%Y'
-          archive_url_date_format: yyyy
-          archive_url_format: '{date}'
-          archive_toc: true
 
 markdown_extensions:
     - admonition
@@ -120,9 +80,7 @@ markdown_extensions:
     - pymdownx.tabbed:
           alternate_style: true
     - pymdownx.details
-    - pymdownx.emoji:
-          emoji_index: !!python/name:material.extensions.emoji.twemoji
-          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - pymdownx.emoji
     - pymdownx.tasklist:
           custom_checkbox: true
     - pymdownx.arithmatex:
@@ -162,32 +120,51 @@ nav:
     - Foundations:
           - Core Practices: foundations/core-practices.md
           - FAQ: foundations/frequently-asked-questions.md
+          - Habit Formation: foundations/habit-formation.md
     - Practice Plan:
           - Phases Overview: plan/phases-overview.md
+          - Phase 1 - Orientation (Days 1-7): plan/phase-01-orientation-days-01-07.md
           - Phase 2 - Stabilization (Days 8-21): plan/phase-02-stabilization-days-08-21.md
+          - Phase 3 - Deepening (Days 22-45): plan/phase-03-deepening-days-22-45.md
+          - Phase 4 - Integration (Days 46-60): plan/phase-04-integration-days-46-60.md
+          - Phase 5 - Expansion (Days 61-90): plan/phase-05-expansion-days-61-90.md
     - Daily Practices:
-          - Week 1 (Days 1-7):
-                - Day 1: days/day01.md
-                - Day 2: days/day02.md
-                - Day 3: days/day03.md
-                - Day 7: days/day07.md
-          - Week 2-3 (Days 8-21):
-                - Day 8: days/day08.md
-                - Day 15: days/day15.md
-          - Week 4+ (Days 22-90):
-                - Day 22: days/day22.md
-                - Day 30: days/day30.md
-                - Day 45: days/day45.md
-                - Day 60: days/day60.md
-                - Day 75: days/day75.md
-                - Day 90: days/day90.md
+          - Day 1: days/day01.md
+          - Day 2: days/day02.md
+          - Day 3: days/day03.md
+          - Day 4: days/day04.md
+          - Day 5: days/day05.md
+          - Day 6: days/day06.md
+          - Day 7: days/day07.md
+          - Day 8: days/day08.md
+          - Day 9: days/day09.md
+          - Day 10: days/day10.md
+          - Day 11: days/day11.md
+          - Day 12: days/day12.md
+          - Day 13: days/day13.md
+          - Day 14: days/day14.md
+          - Day 15: days/day15.md
+          - Day 16: days/day16.md
+          - Day 17: days/day17.md
+          - Day 18: days/day18.md
+          - Day 19: days/day19.md
+          - Day 20: days/day20.md
+          - Day 21: days/day21.md
+          - Day 22: days/day22.md
+          - Day 30: days/day30.md
+          - Day 45: days/day45.md
+          - Day 60: days/day60.md
+          - Day 75: days/day75.md
+          - Day 90: days/day90.md
     - Progress Tracking:
           - Calendar View: progress/calendar-view.md
           - Progress Dashboard: progress/dashboard.md
           - Milestone Tracker: progress/milestones.md
     - Reflection:
-          - Blog: reflection/blog/index.md
+          - Journaling Prompts: reflection/journaling-prompts.md
           - Weekly Reviews: reflection/weekly-reviews.md
     - Enrichment:
           - Cultural Respect: enrichment/cultural-respect.md
+          - Historical Context: enrichment/historical-context.md
+          - Recommended Resources: enrichment/recommended-resources.md
     - Tags: tag-index/index.md
