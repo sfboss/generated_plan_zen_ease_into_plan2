@@ -1,0 +1,441 @@
+/* BREATHING GUIDE COMPONENT */
+
+.breathing-guide-container {
+    background: radial-gradient(circle, rgba(79, 195, 247, 0.1), rgba(79, 195, 247, 0.05));
+    border-radius: 30px;
+    padding: 50px;
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    box-shadow: inset 0 0 50px rgba(79, 195, 247, 0.1), 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.breathing-guide-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(255, 193, 7, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 70% 30%, rgba(79, 195, 247, 0.08) 0%, transparent 60%);
+    animation: ambient-flow 10s infinite ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes ambient-flow {
+    0%,
+    100% {
+        opacity: 0.5;
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1) rotate(180deg);
+    }
+}
+
+.breathing-exercise-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.breathing-type {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.breathing-type::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(79, 195, 247, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.breathing-type:hover::before {
+    left: 100%;
+}
+
+.breathing-type.active {
+    background: linear-gradient(145deg, var(--zen-water), #29b6f6);
+    color: white;
+    border-color: var(--zen-water);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(79, 195, 247, 0.3);
+}
+
+.breathing-circle-main {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breathing-circle-outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(79, 195, 247, 0.3);
+    border-radius: 50%;
+    animation: breathe-outer 4s infinite ease-in-out;
+}
+
+.breathing-circle-inner {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(79, 195, 247, 0.4), rgba(79, 195, 247, 0.1));
+    border-radius: 50%;
+    animation: breathe-inner 4s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(79, 195, 247, 0.2), inset 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.breathing-instruction {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: var(--zen-void);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: instruction-fade 4s infinite ease-in-out;
+}
+
+/* Different breathing patterns */
+.breathing-guide.pattern-4-4-4-4 .breathing-circle-outer,
+.breathing-guide.pattern-4-4-4-4 .breathing-circle-inner,
+.breathing-guide.pattern-4-4-4-4 .breathing-instruction {
+    animation-duration: 16s; /* 4+4+4+4 seconds */
+}
+
+.breathing-guide.pattern-4-7-8 .breathing-circle-outer,
+.breathing-guide.pattern-4-7-8 .breathing-circle-inner,
+.breathing-guide.pattern-4-7-8 .breathing-instruction {
+    animation-duration: 19s; /* 4+7+8 seconds */
+}
+
+.breathing-guide.pattern-6-6 .breathing-circle-outer,
+.breathing-guide.pattern-6-6 .breathing-circle-inner,
+.breathing-guide.pattern-6-6 .breathing-instruction {
+    animation-duration: 12s; /* 6+6 seconds */
+}
+
+@keyframes breathe-outer {
+    0%,
+    100% {
+        transform: scale(1);
+        border-color: rgba(79, 195, 247, 0.3);
+    }
+    25% {
+        transform: scale(1.2);
+        border-color: rgba(79, 195, 247, 0.6);
+    }
+    50% {
+        transform: scale(1.2);
+        border-color: rgba(79, 195, 247, 0.8);
+    }
+    75% {
+        transform: scale(1);
+        border-color: rgba(79, 195, 247, 0.6);
+    }
+}
+
+@keyframes breathe-inner {
+    0%,
+    100% {
+        transform: scale(0.8);
+        background: radial-gradient(circle, rgba(79, 195, 247, 0.2), rgba(79, 195, 247, 0.05));
+    }
+    25% {
+        transform: scale(1.1);
+        background: radial-gradient(circle, rgba(79, 195, 247, 0.6), rgba(79, 195, 247, 0.2));
+    }
+    50% {
+        transform: scale(1.1);
+        background: radial-gradient(circle, rgba(79, 195, 247, 0.8), rgba(79, 195, 247, 0.3));
+    }
+    75% {
+        transform: scale(0.8);
+        background: radial-gradient(circle, rgba(79, 195, 247, 0.4), rgba(79, 195, 247, 0.1));
+    }
+}
+
+@keyframes instruction-fade {
+    0%,
+    100% {
+        opacity: 0.7;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.7;
+    }
+}
+
+.breathing-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.breath-control-btn {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border: 2px solid var(--zen-water);
+    border-radius: 25px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--zen-water);
+    font-weight: 500;
+}
+
+.breath-control-btn:hover {
+    background: linear-gradient(145deg, var(--zen-water), #29b6f6);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(79, 195, 247, 0.3);
+}
+
+.breath-control-btn.active {
+    background: linear-gradient(145deg, var(--zen-water), #29b6f6);
+    color: white;
+}
+
+.breathing-session-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.breath-stat-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(248, 249, 250, 0.8));
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(79, 195, 247, 0.2);
+}
+
+.breath-stat-value {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: var(--zen-water);
+    margin-bottom: 8px;
+}
+
+.breath-stat-label {
+    font-size: 0.9em;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.breathing-tips {
+    background: linear-gradient(145deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 30px;
+    border-left: 4px solid var(--zen-accent);
+}
+
+.breathing-tips h4 {
+    color: var(--zen-accent);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breathing-tips h4::before {
+    content: '💨';
+    font-size: 1.2em;
+}
+
+.breathing-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.breathing-tips li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.breathing-tips li::before {
+    content: '🌟';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Sound wave visualization */
+.breath-sound-waves {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 40px;
+    gap: 3px;
+    margin: 20px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.breath-sound-waves.active {
+    opacity: 1;
+}
+
+.breath-sound-bar {
+    width: 4px;
+    background: linear-gradient(to top, var(--zen-water), #81d4fa);
+    border-radius: 2px;
+    animation: breath-wave 1.5s infinite ease-in-out;
+}
+
+.breath-sound-bar:nth-child(1) {
+    animation-delay: 0s;
+}
+.breath-sound-bar:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.breath-sound-bar:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.breath-sound-bar:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.breath-sound-bar:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+@keyframes breath-wave {
+    0%,
+    100% {
+        height: 10px;
+    }
+    50% {
+        height: 30px;
+    }
+}
+
+/* Progressive disclosure for advanced techniques */
+.advanced-breathing {
+    margin-top: 40px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.advanced-breathing.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.technique-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(248, 249, 250, 0.9));
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.technique-card:hover {
+    border-color: var(--zen-water);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(79, 195, 247, 0.2);
+}
+
+.technique-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--zen-water);
+    margin-bottom: 10px;
+}
+
+.technique-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .breathing-guide-container {
+        padding: 30px 20px;
+        min-height: 400px;
+    }
+
+    .breathing-circle-main {
+        width: 250px;
+        height: 250px;
+    }
+
+    .breathing-instruction {
+        font-size: 1.4em;
+    }
+
+    .breathing-exercise-selector {
+        gap: 10px;
+    }
+
+    .breathing-type {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .breathing-session-stats {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+    }
+}
+
+/* Dark mode adaptations */
+[data-md-color-scheme='slate'] .breathing-guide-container {
+    background: radial-gradient(circle, rgba(79, 195, 247, 0.15), rgba(79, 195, 247, 0.08));
+}
+
+[data-md-color-scheme='slate'] .breathing-type {
+    background: linear-gradient(145deg, #434c5e, #4c566a);
+    color: #eceff4;
+}
+
+[data-md-color-scheme='slate'] .breath-stat-card,
+[data-md-color-scheme='slate'] .technique-card {
+    background: linear-gradient(145deg, rgba(67, 76, 94, 0.9), rgba(76, 86, 106, 0.9));
+    color: #eceff4;
+}
+
+[data-md-color-scheme='slate'] .breathing-instruction {
+    color: #eceff4;
+}
+
+[data-md-color-scheme='slate'] .breathing-tips {
+    background: linear-gradient(145deg, rgba(255, 193, 7, 0.15), rgba(255, 193, 7, 0.08));
+}

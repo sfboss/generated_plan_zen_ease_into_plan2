@@ -1,0 +1,380 @@
+/* ZEN GARDEN PROGRESS VISUALIZATION */
+
+.progress-garden-container {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 30px;
+    padding: 40px;
+    margin: 30px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(255, 255, 255, 0.9);
+}
+
+.progress-garden-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(141, 110, 99, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(79, 195, 247, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 193, 7, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.garden-path {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    background: linear-gradient(45deg, transparent 30%, rgba(141, 110, 99, 0.2) 32%, rgba(141, 110, 99, 0.2) 38%, transparent 40%);
+    border-radius: 50% 30% 40% 60%;
+}
+
+.zen-stone {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #8d6e63, #5d4037);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(0, 0, 0, 0.2), inset 2px 2px 5px rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.zen-stone:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 193, 7, 0.3);
+}
+
+.zen-stone.completed {
+    background: linear-gradient(145deg, var(--zen-gold), var(--zen-accent));
+    animation: stone-glow 2s infinite alternate;
+}
+
+@keyframes stone-glow {
+    0% {
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 193, 7, 0.4);
+    }
+    100% {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 193, 7, 0.6);
+    }
+}
+
+.zen-stone.current {
+    background: linear-gradient(145deg, var(--zen-primary), var(--zen-secondary));
+    animation: current-pulse 1.5s infinite;
+}
+
+@keyframes current-pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Stone sizes for different milestones */
+.zen-stone.milestone-7 {
+    width: 40px;
+    height: 30px;
+    font-size: 0.8em;
+}
+.zen-stone.milestone-21 {
+    width: 50px;
+    height: 40px;
+    font-size: 1em;
+}
+.zen-stone.milestone-45 {
+    width: 60px;
+    height: 45px;
+    font-size: 1.1em;
+}
+.zen-stone.milestone-90 {
+    width: 70px;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+.zen-water {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(79, 195, 247, 0.6), rgba(79, 195, 247, 0.2));
+    animation: water-shimmer 3s infinite ease-in-out;
+}
+
+@keyframes water-shimmer {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.zen-plant {
+    position: absolute;
+    font-size: 2em;
+    color: #4caf50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    animation: plant-sway 4s infinite ease-in-out;
+}
+
+@keyframes plant-sway {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+
+.progress-stats {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 150px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.progress-stats h3 {
+    margin: 0 0 15px 0;
+    color: var(--zen-void);
+    font-size: 1.1em;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: var(--zen-primary);
+}
+
+.garden-legend {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.8em;
+}
+
+.legend-icon {
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.legend-icon.completed {
+    background: linear-gradient(145deg, var(--zen-gold), var(--zen-accent));
+}
+.legend-icon.current {
+    background: linear-gradient(145deg, var(--zen-primary), var(--zen-secondary));
+}
+.legend-icon.pending {
+    background: linear-gradient(145deg, #8d6e63, #5d4037);
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--zen-water);
+    animation: ripple 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+}
+
+.achievement-flowers {
+    position: absolute;
+    font-size: 1.5em;
+    animation: flower-bloom 1s ease-out;
+}
+
+@keyframes flower-bloom {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.meditation-streak-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(145deg, rgba(255, 193, 7, 0.9), rgba(255, 152, 0, 0.9));
+    border-radius: 20px;
+    padding: 15px 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.meditation-streak-indicator.show {
+    opacity: 1;
+    animation: streak-celebration 2s ease-out;
+}
+
+@keyframes streak-celebration {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Interactive hover effects */
+.zen-stone:hover::after {
+    content: attr(data-day);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--zen-void);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+/* Seasonal variations */
+.garden-spring::before {
+    background: radial-gradient(circle at 20% 80%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 193, 7, 0.1) 0%, transparent 50%);
+}
+
+.garden-summer::before {
+    background: radial-gradient(circle at 20% 80%, rgba(255, 152, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 87, 34, 0.1) 0%, transparent 50%);
+}
+
+.garden-autumn::before {
+    background: radial-gradient(circle at 20% 80%, rgba(255, 87, 34, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(121, 85, 72, 0.1) 0%, transparent 50%);
+}
+
+.garden-winter::before {
+    background: radial-gradient(circle at 20% 80%, rgba(96, 125, 139, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(69, 90, 100, 0.1) 0%, transparent 50%);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .progress-garden-container {
+        padding: 20px;
+        min-height: 300px;
+    }
+
+    .progress-stats {
+        position: static;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .garden-legend {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .zen-stone {
+        font-size: 0.8em;
+    }
+
+    .zen-stone.milestone-7 {
+        width: 30px;
+        height: 25px;
+    }
+    .zen-stone.milestone-21 {
+        width: 35px;
+        height: 30px;
+    }
+    .zen-stone.milestone-45 {
+        width: 40px;
+        height: 35px;
+    }
+    .zen-stone.milestone-90 {
+        width: 45px;
+        height: 40px;
+    }
+}
+
+/* Dark mode adaptations */
+[data-md-color-scheme='slate'] .progress-garden-container {
+    background: linear-gradient(135deg, #3b4252, #434c5e);
+}
+
+[data-md-color-scheme='slate'] .progress-stats,
+[data-md-color-scheme='slate'] .garden-legend {
+    background: rgba(59, 66, 82, 0.9);
+    color: #eceff4;
+}
+
+[data-md-color-scheme='slate'] .stat-value {
+    color: var(--zen-accent);
+}

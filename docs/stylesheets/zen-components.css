@@ -1,0 +1,563 @@
+/* ===== ZEN MASTER GUIDE - WILD COMPONENTS ===== */
+
+:root {
+    --zen-primary: #d84315;
+    --zen-secondary: #ff8a50;
+    --zen-accent: #ffc107;
+    --zen-calm: #e8f5e8;
+    --zen-earth: #8d6e63;
+    --zen-water: #4fc3f7;
+    --zen-fire: #ff5722;
+    --zen-void: #263238;
+    --zen-gold: #ffd700;
+    --zen-shadow: rgba(0, 0, 0, 0.1);
+    --zen-glow: rgba(255, 193, 7, 0.3);
+}
+
+/* 🌸 FLOATING ZEN PETALS ANIMATION */
+.zen-petals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.zen-petal {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--zen-accent);
+    border-radius: 50% 0;
+    opacity: 0.7;
+    animation: float-petal 15s infinite linear;
+}
+
+@keyframes float-petal {
+    0% {
+        transform: translateY(-100px) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(100vh) translateX(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* 🎭 DYNAMIC BREATHING GUIDE CIRCLE */
+.breathing-guide {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--zen-accent);
+    border-radius: 50%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.breathing-guide.active {
+    opacity: 0.8;
+    animation: breathe-circle 8s infinite ease-in-out;
+}
+
+@keyframes breathe-circle {
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+
+/* 🏯 ZEN GARDEN PROGRESS VISUALIZATION */
+.zen-garden {
+    background: linear-gradient(135deg, #f5f5dc, #e8f5e8);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.zen-garden::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(141, 110, 99, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(79, 195, 247, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 193, 7, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.zen-stone {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background: var(--zen-earth);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.zen-stone:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--zen-glow);
+}
+
+.zen-ripple {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--zen-water);
+    animation: ripple 2s infinite;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+}
+
+/* 🎯 MEDITATION TIMER COMPONENT */
+.meditation-timer {
+    background: linear-gradient(145deg, var(--zen-calm), white);
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(255, 255, 255, 0.8);
+    margin: 30px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.timer-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+    background: conic-gradient(var(--zen-accent) 0deg, transparent 0deg);
+    transition: background 1s ease;
+}
+
+.timer-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--zen-void);
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.zen-button {
+    background: linear-gradient(145deg, var(--zen-primary), var(--zen-secondary));
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.zen-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.zen-button:active {
+    transform: translateY(0);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏆 ACHIEVEMENT BADGE SYSTEM */
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.achievement-badge {
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-badge.unlocked {
+    background: linear-gradient(145deg, var(--zen-gold), var(--zen-accent));
+    color: var(--zen-void);
+    box-shadow: 0 0 20px var(--zen-glow);
+}
+
+.achievement-badge:hover {
+    transform: translateY(-5px) rotate(2deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.badge-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.achievement-badge.unlocked .badge-icon {
+    filter: grayscale(0%);
+    animation: badge-glow 2s infinite alternate;
+}
+
+@keyframes badge-glow {
+    0% {
+        text-shadow: 0 0 5px var(--zen-glow);
+    }
+    100% {
+        text-shadow: 0 0 15px var(--zen-glow), 0 0 25px var(--zen-glow);
+    }
+}
+
+/* 📊 DYNAMIC PROGRESS BARS */
+.zen-progress {
+    background: linear-gradient(90deg, #e0e0e0, #f5f5f5);
+    border-radius: 25px;
+    height: 15px;
+    margin: 15px 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.zen-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--zen-primary), var(--zen-accent));
+    border-radius: 25px;
+    transition: width 1s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.zen-progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: progress-shine 2s infinite;
+}
+
+@keyframes progress-shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* 🌊 SOUND WAVE VISUALIZATION */
+.sound-waves {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 60px;
+    gap: 3px;
+    margin: 20px 0;
+}
+
+.sound-bar {
+    width: 4px;
+    background: var(--zen-water);
+    border-radius: 2px;
+    animation: wave 1.5s infinite ease-in-out;
+}
+
+.sound-bar:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.sound-bar:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.sound-bar:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.sound-bar:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+@keyframes wave {
+    0%,
+    100% {
+        height: 10px;
+    }
+    50% {
+        height: 40px;
+    }
+}
+
+/* 🎨 MOOD TRACKING INTERFACE */
+.mood-selector {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 20px;
+}
+
+.mood-option {
+    font-size: 3em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.mood-option:hover,
+.mood-option.selected {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* 🌟 FLOATING ACTION MENU */
+.zen-fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.fab-main {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, var(--zen-primary), var(--zen-secondary));
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.fab-main:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.fab-menu {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.zen-fab.active .fab-menu {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.fab-option {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, var(--zen-accent), var(--zen-gold));
+    border: none;
+    color: var(--zen-void);
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.fab-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 🎭 CUSTOM ADMONITIONS */
+.admonition.zen-wisdom {
+    border-left: 4px solid var(--zen-gold);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 193, 7, 0.05));
+}
+
+.admonition.zen-wisdom .admonition-title::before {
+    content: '🧘‍♂️';
+    margin-right: 8px;
+}
+
+.admonition.breathing-exercise {
+    border-left: 4px solid var(--zen-water);
+    background: linear-gradient(135deg, rgba(79, 195, 247, 0.1), rgba(79, 195, 247, 0.05));
+}
+
+.admonition.breathing-exercise .admonition-title::before {
+    content: '🌬️';
+    margin-right: 8px;
+}
+
+.admonition.cultural-note {
+    border-left: 4px solid var(--zen-earth);
+    background: linear-gradient(135deg, rgba(141, 110, 99, 0.1), rgba(141, 110, 99, 0.05));
+}
+
+.admonition.cultural-note .admonition-title::before {
+    content: '🏮';
+    margin-right: 8px;
+}
+
+.admonition.mindfulness-bell {
+    border-left: 4px solid var(--zen-accent);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+    position: relative;
+    overflow: hidden;
+}
+
+.admonition.mindfulness-bell::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, transparent 70%);
+    animation: bell-ring 3s infinite;
+    pointer-events: none;
+}
+
+@keyframes bell-ring {
+    0%,
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 📱 MOBILE OPTIMIZATIONS */
+@media (max-width: 768px) {
+    .meditation-timer {
+        padding: 20px;
+    }
+
+    .timer-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .achievement-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+    }
+
+    .zen-fab {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* 🌈 ACCESSIBILITY ENHANCEMENTS */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* 🌙 ENHANCED DARK MODE */
+[data-md-color-scheme='slate'] {
+    --zen-calm: #2e3440;
+    --zen-shadow: rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme='slate'] .zen-garden {
+    background: linear-gradient(135deg, #3b4252, #434c5e);
+}
+
+[data-md-color-scheme='slate'] .meditation-timer {
+    background: linear-gradient(145deg, #3b4252, #434c5e);
+}
+
+/* 🎵 AUDIO CONTROLS STYLING */
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.volume-slider {
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--zen-accent);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
