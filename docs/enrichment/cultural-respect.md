@@ -39,7 +39,7 @@ Zen (_禅_) developed through the transmission of Buddhist teachings from India 
 !!! quote "Traditional Teaching"
 "When you bow to Buddha, you are bowing to your Buddha nature. When you understand this, bowing and Buddha are one." - _Shunryu Suzuki Roshi_
 
-## :temple: Traditional Context vs. Contemporary Practice
+## 🏛️ Traditional Context vs. Contemporary Practice
 
 ### Temple-Based Practice
 
@@ -240,7 +240,7 @@ If you share Zen practices with others, additional responsibilities apply:
 -   Supporting thoughtful adaptation efforts
 -   Contributing to respectful practice communities
 
-## :balance_scale: Finding Your Path
+## ⚖️ Finding Your Path
 
 ### Personal Practice Integration
 

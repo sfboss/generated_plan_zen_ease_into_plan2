@@ -71,7 +71,7 @@ Simple guidelines for creating a respectful practice environment and honoring th
 -   **Share experiences without spiritual materialism**
 -   **Offer support without giving unsolicited advice**
 
-## :balance_scale: Modern Adaptations
+## ⚖️ Modern Adaptations
 
 ### Home Practice
 

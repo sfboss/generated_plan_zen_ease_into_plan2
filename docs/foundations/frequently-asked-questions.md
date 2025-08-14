@@ -54,7 +54,7 @@ A "busy mind" is exactly why meditation is beneficial! You're not trying to stop
 -   Understand that observing a busy mind IS mindfulness
 -   Don't expect immediate mental quiet
 
-## :lotus_position: Posture and Physical Practice
+## 🧘‍♂️ Posture and Physical Practice
 
 ### "I have back pain when sitting. What should I do?"
 

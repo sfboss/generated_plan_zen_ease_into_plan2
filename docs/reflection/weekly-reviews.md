@@ -90,7 +90,7 @@ Regular reflection strengthens your practice by helping you recognize progress, 
 -   **Boredom or resistance:** Possible need for variation or deeper instruction
 -   **Spiritual materialism:** Attachment to experiences or progress
 
-## :balance_scale: Making Adjustments
+## ⚖️ Making Adjustments
 
 ### When to Modify Practice
 

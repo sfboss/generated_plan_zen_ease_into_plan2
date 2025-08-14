@@ -14,7 +14,7 @@ difficulty: 'starter'
 
 Today we expand beyond breath alone to include body awareness, creating a fuller foundation for meditation practice while maintaining the gentle approach of early learning.
 
-## Core Practice :lotus_position:
+## Core Practice 🧘‍♂️
 
 **Duration:** 6 minutes  
 **Focus:** Whole-body awareness with breath as anchor

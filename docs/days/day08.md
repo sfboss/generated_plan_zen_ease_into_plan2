@@ -23,7 +23,7 @@ difficulty: "gentle"
 
 Today you take a significant step - literally and figuratively - by adding movement to your meditation practice. Your intention is to discover that the same awareness cultivated in sitting can function beautifully while walking slowly and mindfully.
 
-## 2. Core Practice :lotus_position:
+## 2. Core Practice 🧘‍♂️
 
 **Duration:** 10 minutes (8 minutes sitting + 2 minutes walking)  
 **Focus:** Seamless transition between sitting and walking awareness

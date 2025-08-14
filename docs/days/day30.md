@@ -23,7 +23,7 @@ difficulty: "moderate"
 
 Congratulations on 30 days of practice! Today marks a transition into deeper concentration work. Your intention is to explore sustained attention through combined sitting and walking meditation, observing how awareness can remain stable through different activities.
 
-## 2. Core Practice :lotus_position:
+## 2. Core Practice 🧘‍♂️
 
 **Duration:** 20 minutes total (15m sitting + 5m walking)  
 **Focus:** Sustained concentration and seamless transition between postures

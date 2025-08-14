@@ -19,7 +19,7 @@ difficulty: 'moderate'
 
 Halfway through your 90-day journey! Today's intention is to appreciate how far you've come while demonstrating the concentration and integration skills you've developed through consistent practice.
 
-## Core Practice :lotus_position:
+## Core Practice 🧘‍♂️
 
 **Duration:** 22 minutes total (flexible structure)  
 **Focus:** Integrated practice demonstrating all Phase 3 skills

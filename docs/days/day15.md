@@ -19,7 +19,7 @@ difficulty: 'gentle'
 
 Two weeks of practice have built your foundation. Today's intention is to experience sitting and walking as one continuous meditation, developing the skill of maintaining awareness through transitions.
 
-## Core Practice :lotus_position:
+## Core Practice 🧘‍♂️
 
 **Duration:** 15 minutes total (10m sitting + 5m walking)  
 **Focus:** Seamless awareness through different postures

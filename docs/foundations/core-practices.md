@@ -8,7 +8,7 @@ tags: [meta:reference, practice:zazen, practice:kinhin, skill:fundamentals]
 
 ---
 
-# Core Zen Practices :lotus_position:
+# Core Zen Practices 🧘‍♂️
 
 Understanding the fundamental practices of Zen provides the foundation for your 90-day journey and lifelong cultivation. These core techniques have been refined over centuries to support awakening and beneficial living.
 
@@ -216,7 +216,7 @@ Traditional koan study requires qualified teacher guidance. What follows is gent
 -   Don't grasp for "correct" answers
 -   Let the koan work on you rather than working on the koan
 
-## :balance_scale: Integrating the Practices
+## ⚖️ Integrating the Practices
 
 ### Daily Structure Template
 

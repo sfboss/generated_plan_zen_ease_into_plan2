@@ -76,7 +76,7 @@ Zen Buddhism developed into three main schools in Japan, each with distinctive a
 !!! note "Koan Caution"
 Traditional koan study requires qualified teacher guidance. Intellectual approach misses the point entirely.
 
-## :lotus_position: Ōbaku Zen (黄檗宗)
+## 🧘‍♂️ Ōbaku Zen (黄檗宗)
 
 ### Origins and Characteristics
 
@@ -98,7 +98,7 @@ Traditional koan study requires qualified teacher guidance. Intellectual approac
 -   Distinctive architectural and artistic styles
 -   Integration of different Buddhist streams
 
-## :balance_scale: Commonalities Across Schools
+## ⚖️ Commonalities Across Schools
 
 Despite differences, all Zen schools share:
 

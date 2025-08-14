@@ -11,7 +11,7 @@ theme:
     features:
         - navigation.sections
         - navigation.tabs
-        - navigation.top````
+        - navigation.top
         - navigation.tracking
         - navigation.instant
         - navigation.instant.prefetch

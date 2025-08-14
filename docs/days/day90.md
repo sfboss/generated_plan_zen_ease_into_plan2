@@ -23,7 +23,7 @@ difficulty: "deepening"
 
 Congratulations on reaching Day 90! Today your intention encompasses both completion and beginning - honoring the transformation you've undergone while setting the foundation for continued practice beyond this structured plan. You practice not as a beginner but as someone who has cultivated genuine familiarity with Zen meditation.
 
-## 2. Core Practice :lotus_position:
+## 2. Core Practice 🧘‍♂️
 
 **Duration:** 30 minutes (your choice of structure)  
 **Focus:** Confident, independent practice reflecting your developed style

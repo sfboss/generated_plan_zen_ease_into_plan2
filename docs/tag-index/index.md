@@ -33,7 +33,7 @@ Tags appear in the metadata of each page and help you:
 -   **`meta:overview`** - Summary and orientation pages
 -   **`meta:reflection`** - Review and assessment content
 
-## :lotus_position: Practice Type Tags
+## 🧘‍♂️ Practice Type Tags
 
 ### Core Meditation Practices
 

@@ -23,7 +23,7 @@ difficulty: "deepening"
 
 With 75 days of experience, you've developed genuine familiarity with Zen practice. Today's intention is to explore flexible awareness - the ability to maintain meditative presence regardless of changing circumstances, duration, or external conditions. You're preparing for lifelong independent practice.
 
-## 2. Core Practice :lotus_position:
+## 2. Core Practice 🧘‍♂️
 
 **Duration:** 28 minutes (flexible structure)  
 **Focus:** Adaptive awareness and personal practice refinement

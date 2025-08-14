@@ -19,7 +19,7 @@ difficulty: 'moderate'
 
 Today marks your entry into deeper practice territory. With three weeks of foundation behind you, your intention is to explore sustained concentration and the natural stillness that emerges from consistent attention. Trust the stability you've built.
 
-## 2. Core Practice :lotus_position:
+## 2. Core Practice 🧘‍♂️
 
 **Duration:** 18 minutes sitting + 4 minutes walking  
 **Focus:** Sustained attention and concentration development

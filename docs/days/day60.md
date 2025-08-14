@@ -19,7 +19,7 @@ difficulty: 'moderate+'
 
 Having spent two weeks developing integration skills, today's intention is to demonstrate complete confidence in adapting your practice to any circumstances while maintaining the depth and benefits you've cultivated.
 
-## Core Practice :lotus_position:
+## Core Practice 🧘‍♂️
 
 **Duration:** 25 minutes (completely flexible structure)  
 **Focus:** Personal practice mastery and integration demonstration

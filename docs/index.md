@@ -8,14 +8,15 @@ tags: [meta:overview, theme:welcome]
 
 ---
 
-# Welcome to Your Zen Practice Journey :lotus_position:
+# Welcome to Your Zen Practice Journey 🧘‍♂️
 
 Transform your daily life through the ancient wisdom of Zen meditation with this comprehensive 90-day guided practice plan. Designed with deep cultural respect and modern accessibility, this journey will help you develop a sustainable meditation practice that integrates seamlessly into contemporary life.
 
 ## :seedling: What You'll Discover
 
-!!! example "Your 90-Day Transformation" - **Week 1-2**: Master fundamental posture and breathing techniques - **Week 3-6**: Develop consistent daily practice routines  
- - **Week 7-12**: Deepen concentration and mindful awareness - **Week 13-18**: Integrate Zen principles into daily activities - **Week 19-24**: Expand practice with advanced techniques and personal adaptation
+!!! example "Your 90-Day Transformation" - **Week 1-2**: Master fundamental posture and breathing techniques - **Week 3-6**: Develop consistent daily practice routines
+
+-   **Week 7-12**: Deepen concentration and mindful awareness - **Week 13-18**: Integrate Zen principles into daily activities - **Week 19-24**: Expand practice with advanced techniques and personal adaptation
 
 ## :compass: Quick Start Guide
 

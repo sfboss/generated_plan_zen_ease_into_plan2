@@ -23,7 +23,7 @@ difficulty: "starter"
 
 Today marks a significant milestone - one full week of daily practice. Your intention is to integrate the foundational skills you've developed, appreciate your commitment, and prepare confidently for Phase 2's new elements.
 
-## 2. Core Practice :lotus_position:
+## 2. Core Practice 🧘‍♂️
 
 **Duration:** 8 minutes  
 **Focus:** Integration of posture, breath, and attention skills

@@ -12,7 +12,7 @@ tags: [meta:reference, skill:terminology, theme:understanding]
 
 Understanding key terms enhances your practice and appreciation of Zen's rich tradition. Japanese terms are _italicized_ with pronunciation guides.
 
-## :lotus_position: Core Practice Terms
+## 🧘‍♂️ Core Practice Terms
 
 **Zazen** (_zah-zen_) - 座禅
 : "Just sitting" meditation. The fundamental practice of Zen, involving upright posture and present-moment awareness without trying to achieve any particular state.
@@ -29,7 +29,7 @@ Understanding key terms enhances your practice and appreciation of Zen's rich tr
 **Dōgen** (_doh-gen_) - 道元
 : 13th-century Japanese monk who founded Sōtō Zen in Japan. Emphasized that practice itself is enlightenment.
 
-## :temple: Posture & Form
+## 🏛️ Posture & Form
 
 **Seiza** (_say-zah_) - 正座
 : Traditional Japanese kneeling posture, sitting on heels. Can be used for meditation with or without a cushion.

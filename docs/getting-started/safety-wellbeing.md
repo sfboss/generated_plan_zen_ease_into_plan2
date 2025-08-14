@@ -126,7 +126,7 @@ If you have a history of trauma, PTSD, or severe mental health conditions:
 -   Maintain medication compliance
 -   Have a support plan in place
 
-## :balance_scale: Healthy Practice Guidelines
+## ⚖️ Healthy Practice Guidelines
 
 ### Start Gradually
 

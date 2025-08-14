@@ -23,7 +23,7 @@ difficulty: "starter"
 
 Today you deepen your relationship with breath as the anchor of meditation. Your intention is to distinguish between controlling breath and simply observing it, developing the gentle skill of returning attention when it wanders.
 
-## 2. Core Practice :lotus_position:
+## 2. Core Practice 🧘‍♂️
 
 **Duration:** 5 minutes  
 **Focus:** Natural breath observation and gentle attention training

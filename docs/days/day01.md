@@ -23,7 +23,7 @@ difficulty: "starter"
 
 Today you begin a profound journey that has been walked by countless practitioners for centuries. Your intention is simple: to sit with awareness and breathe mindfully for just 5 minutes. There's no need to achieve anything special - simply being present is enough.
 
-## 2. Core Practice :lotus_position:
+## 2. Core Practice 🧘‍♂️
 
 **Duration:** 5 minutes  
 **Focus:** Posture establishment and natural breathing
