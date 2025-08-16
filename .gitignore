@@ -1,9 +1,5 @@
 # MkDocs build output
-/site/
 site/
-
-# GitHub workflows (server-managed)
-.github/
 
 # Python
 __pycache__/
@@ -53,10 +49,8 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Logs
+# Logs and temporary files
 *.log
 nohup.out
-
-# Temporary files
 *.tmp
 *.temp
